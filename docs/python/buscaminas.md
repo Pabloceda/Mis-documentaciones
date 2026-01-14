@@ -1,6 +1,6 @@
 # 🎮 BuscaMinas - Juego en Consola
 
-**Proyecto:** Juego de Buscaminas completo sin interfaz gráfica
+**Proyecto:** Juego de Buscaminas completo sin interfaz gráfica  
 **Autores:** Pablo Calderón, Hugo, Miguel, Alejandro e Íñigo  
 **Curso:** 2º ASIR  
 **Lenguaje:** Python 3
@@ -23,7 +23,7 @@
 
 ## 🎯 Descripción
 
-BuscaMinas es una implementación completa del clásico juego de Minas, totalmente funcional en consola. El proyecto incluye **colores ANSI**, **sistema de puntuaciones** persistentes, **protección de primera jugada**, **cronómetro en tiempo real**, y **múltiples niveles de dificultad**.
+Este proyecto es una implementación completa del clásico juego del BuscaMinas, totalmente funcional en consola, sin interfaz gráfica. El proyecto incluye **colores ANSI**, **sistema de puntuaciones** persistentes, **protección de primera jugada**, **cronómetro en tiempo real**, y **múltiples niveles de dificultad**.
 
 !!! abstract "Resumen"
     Juego de lógica donde debes descubrir todas las celdas sin pisar las minas. Incluye 3 niveles de dificultad, sistema de récords, comandos especiales y visualización con colores.
@@ -59,6 +59,9 @@ python --version
 
     ```bash
     # Clonar o descargar el proyecto
+    git clone https://github.com/Pabloceda/ProyectoPython.git
+
+    # Nos colocamos en el directorio del proyecto 
     cd ProyectoPython
     
     # Ejecutar el juego
@@ -69,6 +72,9 @@ python --version
 
     ```bash
     # Clonar o descargar el proyecto
+    git clone https://github.com/Pabloceda/ProyectoPython.git
+
+    # Nos colocamos en el directorio del proyecto 
     cd ProyectoPython
     
     # Ejecutar el juego
@@ -136,7 +142,7 @@ El código está organizado en **13 partes** principales:
 
 ### Parte 1: Configuración Global
 
-```python
+```python linenums="1"
 # Configuraciones de dificultad
 CONFIGURACIONES = {
     '1': {'nombre': 'Fácil', 'filas': 6, 'columnas': 6, 'minas': 5},
@@ -150,7 +156,7 @@ ARCHIVO_PUNTUACIONES = 'puntuaciones.json'
 
 ### Parte 2: Sistema de Colores ANSI
 
-```python
+```python linenums="1"
 class Colores:
     """Clase con códigos de colores ANSI para la consola"""
     RESET = '\033[0m'
@@ -177,7 +183,7 @@ COLORES_NUMEROS = {
 
 ### Parte 3: Crear Tablero
 
-```python
+```python linenums="1"
 def crear_tablero():
     """
     Crea un tablero vacío representado como lista de listas.
@@ -202,7 +208,7 @@ def crear_tablero():
 
 ### Parte 4: Colocar Minas
 
-```python hl_lines="13-20"
+```python linenums="1" hl_lines="13-20"
 def colocar_minas(tablero, num_minas):
     """
     Coloca minas aleatoriamente en el tablero.
@@ -271,7 +277,7 @@ def descubrir_celda(tablero, tablero_visible, fila, columna):
     return True
 ```
 
-!!! success "Ventaja del Algoritmo Iterativo"
+??? success "Ventaja del Algoritmo Iterativo"
     - ✅ No hay límite de profundidad de recursión
     - ✅ Mejor uso de memoria
     - ✅ Mismo resultado que versión recursiva
@@ -283,7 +289,7 @@ def descubrir_celda(tablero, tablero_visible, fila, columna):
 
 ### 1. Protección de Primera Jugada
 
-```python
+```python linenums="1"
 def proteger_primera_jugada(tablero, fila, columna):
     """
     Asegura que la primera jugada nunca sea una mina.
@@ -302,7 +308,7 @@ def proteger_primera_jugada(tablero, fila, columna):
 
 ### 2. Sistema de Puntuaciones
 
-```python
+```python linenums="1"
 def guardar_puntuacion(dificultad, tiempo):
     """Guarda puntuación si es nuevo récord"""
     puntuaciones = cargar_puntuaciones()
@@ -324,7 +330,7 @@ def guardar_puntuacion(dificultad, tiempo):
 
 ### 3. Cronómetro en Tiempo Real
 
-```python
+```python linenums="1"
 def jugar(filas, columnas, num_minas, nombre_dificultad):
     tiempo_inicio = time.time()  # Inicia cronómetro
     
@@ -339,7 +345,7 @@ def jugar(filas, columnas, num_minas, nombre_dificultad):
 
 ### 4. Sistema de Pistas
 
-```python
+```python linenums="1"
 def obtener_celda_segura(tablero, tablero_visible):
     """Encuentra celda segura aleatoria para pista"""
     celdas_seguras = []
@@ -409,7 +415,7 @@ flowchart TD
 
 ### Ejemplo de Tablero Coloreado
 
-```python
+```python linenums="1"
 def mostrar_tablero(tablero_visible):
     """Muestra tablero con colores ANSI"""
     print("\n" + Colores.CIAN + "   ", end="")
@@ -450,7 +456,7 @@ def mostrar_tablero(tablero_visible):
 **Causa:** No había verificación de victoria después de usar pista.
 
 **Solución:**
-```python
+```python linenums="1"
 # Después de descubrir celda por pista
 if verificar_victoria(tablero_visible):
     tiempo_final = time.time() - tiempo_inicio
@@ -467,7 +473,7 @@ if verificar_victoria(tablero_visible):
 **Causa:** Margen dinámico calculado incorrectamente para tableros pequeños.
 
 **Solución:**
-```python
+```python linenums="1"
 # ANTES (margen dinámico - causaba desalineación)
 print("\n" + Colores.CIAN + " " * (ancho_fila + 1), end="")
 
@@ -480,7 +486,7 @@ print("\n" + Colores.CIAN + "   ", end="")
 **Descripción:** Nombres con tilde aparecían como `F\\u00e1cil`.
 
 **Solución:**
-```python
+```python linenums="1"
 with open(ARCHIVO_PUNTUACIONES, 'w', encoding='utf-8') as f:
     json.dump(puntuaciones, f, indent=4, ensure_ascii=False)
 ```
@@ -505,8 +511,8 @@ with open(ARCHIVO_PUNTUACIONES, 'w', encoding='utf-8') as f:
 
 ### Documentación
 
-- [Documentación técnica completa](file:///e:/ALBOR%20-%20ILERNA/2º%20CURSO/Python/ProyectoPython/DocumentacionBuscaMinas.md)
-- [Plan de estudio del código](file:///e:/ALBOR%20-%20ILERNA/2º%20CURSO/Python/ProyectoPython/PlanEstudioBuscaMinas.md)
+- [Código fuente completo](file:///e:/ALBOR%20-%20ILERNA/2º%20CURSO/Python/ProyectoPython/BuscaMinas.py)
+- [Documentación técnica original](file:///e:/ALBOR%20-%20ILERNA/2º%20CURSO/Python/ProyectoPython/DocumentacionBuscaMinas.md)
 
 ### Referencias Externas
 
