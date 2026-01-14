@@ -19,8 +19,8 @@
 === "Python"
     Mi lenguaje principal. Lo uso para:
     
-    - Desarrollo de juegos
-    - Scripts y automatización
+    - Desarrollo de scripts
+    - Automatización
     - Proyectos académicos
 
 === "Web"
@@ -41,7 +41,7 @@
 
 | Tecnología | Nivel | Experiencia |
 |-----------|-------|-------------|
-| Python | ⭐⭐⭐⭐ | 2 años |
+| Python | ⭐⭐ | 1 año |
 | HTML/CSS | ⭐⭐⭐⭐ | 2 años |
 | JavaScript | ⭐⭐⭐ | 1 año |
 | PHP | ⭐⭐⭐ | 1 año |
@@ -111,7 +111,7 @@ Juego completo con múltiples niveles, sistema de puntuaciones y colores.
 
 !!! tip "¿Quieres contactarme?"
     - :fontawesome-brands-github: [GitHub: @pabloceda](https://github.com/pabloceda)
-    - :fontawesome-solid-envelope: Email: (tu email si quieres)
+    - :fontawesome-solid-envelope: Email: proximamente
 
 ---
 

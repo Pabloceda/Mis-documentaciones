@@ -18,7 +18,7 @@ Este sitio contiene la documentación de todos mis proyectos organizados por cat
 
     [:octicons-arrow-right-24: Ver proyectos Python](python/index.md)
 
--   :fontawesome-brands-html5:{ .lg .middle } __Desarrollo Web__
+-   :fontawesome-brands-html5:{ .lg .middle } __Implantación de aplicaciones Web__
 
     ---
 
