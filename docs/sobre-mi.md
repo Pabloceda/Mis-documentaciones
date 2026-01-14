@@ -1,16 +1,14 @@
 # 👋 Sobre Mí
 
-¡Hola! Soy **Pablo Ceda**, estudiante de desarrollo de aplicaciones y apasionado por la programación.
+¡Hola! Soy **Pablo**, estudiante de Administración de Sistemas Informáticos en Red. Aquí encontrarás toda la documentación de mis proyectos.
 
 ---
 
 ## 🎓 Formación
 
-📚 **Estudiante de Desarrollo de Aplicaciones**
+📚 **Estudiante de Administración de Sistemas Informáticos en Red**
 
 - Segundo curso
-- Especialización en desarrollo web y aplicaciones
-- Instituto ILERNA
 
 ---
 
@@ -53,11 +51,37 @@
 
 ## 🎯 Intereses
 
-!!! note "Áreas de Interés"
-    - 🎮 Desarrollo de videojuegos
-    - 🌐 Desarrollo web full-stack
-    - 🔒 Seguridad informática
-    - 🤖 Automatización con Python
+!!! note "Áreas de Especialización ASIR"
+    - 🖥️ **Administración de Sistemas:** Gestión de servidores Linux/Windows
+    - 🌐 **Redes:** Configuración y optimización de infraestructuras
+    - 🔒 **Seguridad:** Hardening, firewalls y protección de sistemas
+    - 🐳 **Contenedores:** Docker y orquestación con Kubernetes
+    - ☁️ **Cloud Computing:** Infraestructura como código
+    - 🤖 **Automatización:** Scripts y herramientas de DevOps
+
+---
+
+## 🛠️ Infraestructura y Herramientas
+
+### Sistemas y Servidores
+
+=== "Linux"
+    - Ubuntu Server
+    - Configuración de servicios (Apache, DNS, DHCP)
+    - Gestión de usuarios y permisos
+    - Shell scripting
+
+=== "Redes"
+    - Configuración de routers y switches
+    - VLANs y subnetting
+    - Protocolos TCP/IP
+    - Servicios de red (DNS, DHCP, FTP)
+
+=== "Seguridad"
+    - Firewalls y políticas de seguridad
+    - SSL/TLS y certificados
+    - Backup y recuperación
+    - Alta disponibilidad
 
 ---
 
@@ -91,17 +115,29 @@ Juego completo con múltiples niveles, sistema de puntuaciones y colores.
 
 ---
 
-## 🎓 Objetivos 2026
+## � Objetivos 2026
+
+### 📚 Certificaciones Profesionales
+
+- [ ] **🔒 CompTIA Security+** - Fundamentos de ciberseguridad
+- [ ] **🔐 CompTIA CySA+** - Analista de ciberseguridad
+- [ ] **🌐 Cisco CCNA** - Certificación de redes Cisco
+- [ ] **☁️ AWS Cloud Practitioner** - Fundamentos de cloud
+
+### 🛠️ Tecnologías a Dominar
 
 - [x] Aprender Material for MkDocs
-- [ ] Completar proyectos de redes
-- [ ] Desarrollar aplicación web completa
-- [ ] Contribuir a proyecto open source
+- [ ] **🐳 Docker** - Contenedores y deployment
+- [ ] **☸️ Kubernetes** - Orquestación de contenedores
+- [ ] **🔧 Ansible** - Automatización de configuraciones
+- [ ] **📊 Prometheus + Grafana** - Monitorización
+- [ ] Desarrollar infraestructura completa de alta disponibilidad
+- [ ] Contribuir a proyecto open source de DevOps
 
 ---
 
 !!! quote "Filosofía"
-    *"La mejor manera de aprender es documentando lo que haces."*
+    *"Un buen administrador de sistemas documenta todo lo que hace."*
 
 ---
 

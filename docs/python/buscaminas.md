@@ -1,7 +1,6 @@
 # 🎮 BuscaMinas - Juego en Consola
 
 **Proyecto:** Juego de Buscaminas completo sin interfaz gráfica  
-**Autores:** Pablo Calderón, Hugo, Miguel, Alejandro e Íñigo  
 **Curso:** 2º ASIR  
 **Lenguaje:** Python 3
 
@@ -542,9 +541,7 @@ with open(ARCHIVO_PUNTUACIONES, 'w', encoding='utf-8') as f:
 
 ---
 
-## 👤 Autores
-
-**Pablo Calderón, Hugo, Miguel, Alejandro e Íñigo**
+## Detalles del Proyecto
 
 - Curso: 2º ASIR
 - Proyecto: Buscaminas en Consola
