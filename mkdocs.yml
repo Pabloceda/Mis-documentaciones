@@ -3,6 +3,8 @@ site_url: https://pabloceda.github.io/Mis-Documentaciones/
 
 theme:
   name: material
+  language: es
+  
   # Paleta de colores (modo oscuro/claro)
   palette: 
     # Modo Oscuro
@@ -20,19 +22,99 @@ theme:
         icon: material/brightness-7
         name: Cambiar a modo oscuro
 
-  # Características extra (pestañas, búsqueda rápida)
+  # Características extra
   features:
-    - navigation.tabs
-    - search.suggest
+    - navigation.tabs              # Pestañas de navegación
+    - navigation.tabs.sticky       # Pestañas fijas al hacer scroll
+    - navigation.sections          # Secciones en la navegación
+    - navigation.expand            # Expandir subsecciones
+    - navigation.path              # Ruta de navegación
+    - navigation.top               # Botón "volver arriba"
+    - search.suggest               # Sugerencias de búsqueda
+    - search.highlight             # Resaltar términos buscados
+    - search.share                 # Compartir búsqueda
+    - content.code.copy            # Copiar código
+    - content.code.annotate        # Anotaciones en código
+    - content.tabs.link            # Tabs sincronizados
 
-# Extensiones para iconos, emojis y código
+# Plugins
+plugins:
+  - search:
+      lang: es
+  - tags
+
+# Extensiones de Markdown
 markdown_extensions:
-  - pymdownx.highlight:
+  # Sintaxis básica
+  - abbr                           # Abreviaciones
+  - attr_list                      # Atributos HTML
+  - def_list                       # Listas de definiciones
+  - footnotes                      # Notas al pie
+  - md_in_html                     # Markdown dentro de HTML
+  - tables                         # Tablas
+  - toc:                           # Tabla de contenidos
+      permalink: true
+      
+  # Admonitions (callouts/alertas)
+  - admonition                     # Bloques de advertencia básicos
+  - pymdownx.details               # Detalles colapsables
+  
+  # Code blocks
+  - pymdownx.highlight:            # Resaltado de sintaxis
       anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - attr_list
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite          # Código inline resaltado
+  - pymdownx.snippets              # Incluir snippets de código
+  - pymdownx.superfences:          # Code blocks avanzados
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  
+  # Listas y formato
+  - pymdownx.tasklist:             # Listas de tareas
+      custom_checkbox: true
+  - pymdownx.betterem:             # Énfasis mejorado
+      smart_enable: all
+  
+  # Contenido especial
+  - pymdownx.mark                  # Texto marcado/resaltado
+  - pymdownx.caret                 # Superíndice y subrayado
+  - pymdownx.tilde                 # Tachado y subíndice
+  - pymdownx.keys                  # Teclas de teclado
+  - pymdownx.critic                # Crítica/revisión de texto
+  
+  # Emojis e iconos
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  
+  # Tabs y contenido
+  - pymdownx.tabbed:               # Pestañas de contenido
+      alternate_style: true
+  - pymdownx.smartsymbols          # Símbolos especiales
+
+# Navegación
+nav:
+  - Inicio: index.md
+  - Python:
+    - python/index.md
+    - Ejemplos Markdown: python/ejemplos-markdown.md
+  - Desarrollo Web:
+    - web/index.md
+  - Bases de Datos:
+    - bases-datos/index.md
+  - Redes:
+    - redes/index.md
+  - Seguridad:
+    - seguridad/index.md
+  - Plantillas:
+    - templates/plantilla-proyecto.md
+  - Sobre Mí: sobre-mi.md
+
+# Información adicional
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/pabloceda
