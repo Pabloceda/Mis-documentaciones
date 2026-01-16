@@ -1,0 +1,53 @@
+/* Hero section en homepage */
+.md-typeset .hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+    color: white;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Cards con hover effect */
+.md-typeset .grid.cards > :hover {
+    transform: translateY(-4px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+/* Timeline para proyectos */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: var(--md-primary-fg-color);
+}
+
+/* Badge de certificaciones */
+.badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background: var(--md-accent-fg-color);
+    color: white;
+    font-weight: bold;
+}
+
+/* Mejoras generales */
+.md-typeset h1 {
+    font-weight: 700;
+}
+
+/* Blog cards */
+.md-typeset .blog-post-card {
+    border-left: 3px solid var(--md-primary-fg-color);
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
