@@ -1,20 +1,22 @@
-# 💼 Portfolio de Proyectos
+# 💼 Proyectos
 
-Bienvenido a mi portfolio de proyectos. Aquí encontrarás una selección de los trabajos más destacados que he desarrollado.
+Aquí encontrarás todos mis proyectos, tanto completados como en desarrollo.
 
 ---
 
-## 🚀 Proyectos Destacados
+## ✅ Proyectos Completados
 
 <div class="grid cards" markdown>
 
--   :fontawesome-brands-python:{ .lg } __BuscaMinas__
+-   :fontawesome-brands-python:{ .lg .middle } **BuscaMinas**
 
     ---
     
-    Juego completo en Python con colores ANSI, sistema de puntuaciones y múltiples niveles de dificultad.
+    Juego clásico de BuscaMinas en Python con interfaz de consola, colores ANSI, sistema de puntuaciones y múltiples niveles de dificultad.
     
-    **Stack:** Python, JSON
+    **Tecnologías:** Python, JSON
+    
+    **Estado:** ✅ Completado
     
     [:octicons-arrow-right-24: Ver documentación](../python/buscaminas.md)
 
@@ -22,16 +24,37 @@ Bienvenido a mi portfolio de proyectos. Aquí encontrarás una selección de los
 
 ---
 
-## 📊 Estadísticas
+## 🚧 Proyectos en Desarrollo
 
-| Categoría | Proyectos |
-|-----------|-----------|
-| Python | 1 |
-| Redes | 0 |
-| Web | 0 |
-| Seguridad | 0 |
+<div class="grid cards" markdown>
+
+-   :fontawesome-solid-server:{ .lg .middle } **Servidor Web Completo**
+
+    ---
+    
+    Configuración de servidor Apache con SSL/TLS, virtual hosts y seguridad avanzada.
+    
+    **Tecnologías:** Apache, Linux, SSL
+    
+    **Estado:** 🚧 En desarrollo
+
+-   :fontawesome-brands-docker:{ .lg .middle } **Laboratorio Docker**
+
+    ---
+    
+    Entorno de contenedores para prácticas de microservicios y orquestación.
+    
+    **Tecnologías:** Docker, Docker Compose
+    
+    **Estado:** 📋 Planificado
+
+</div>
 
 ---
 
-!!! info "En desarrollo"
-    Más proyectos serán añadidos próximamente.
+## 💡 Ideas Futuras
+
+- [ ] Automatización con Ansible
+- [ ] Monitorización con Prometheus/Grafana
+- [ ] Cluster Kubernetes local
+- [ ] VPN con WireGuard
