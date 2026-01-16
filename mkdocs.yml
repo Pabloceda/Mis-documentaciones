@@ -147,6 +147,7 @@ nav:
     - proyectos/index.md
     - BuscaMinas: python/buscaminas.md
   - Documentación:
+    - documentacion/index.md
     - Python: python/index.md
     - Desarrollo Web: web/index.md
     - Bases de Datos: bases-datos/index.md
@@ -154,7 +155,6 @@ nav:
     - Seguridad: seguridad/index.md
     - Cursos: cursos/index.md
     - Certificaciones: certificaciones/index.md
-    - Plantilla Proyecto: templates/plantilla-proyecto.md
   - Sobre Mí: sobre-mi.md
 
 # Extra
