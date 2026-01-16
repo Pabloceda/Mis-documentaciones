@@ -71,6 +71,7 @@ plugins:
         - Seguridad
         - DevOps
         - Tutorial
+        - Opinión
       archive: true
       archive_name: Archivo
       archive_date_format: yyyy
