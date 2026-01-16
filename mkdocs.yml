@@ -145,23 +145,16 @@ nav:
     - blog/index.md
   - Proyectos:
     - proyectos/index.md
-  - Cursos:
-    - cursos/index.md
+    - BuscaMinas: python/buscaminas.md
   - Documentación:
-    - Python:
-      - python/index.md
-      - BuscaMinas: python/buscaminas.md
-    - Desarrollo Web:
-      - web/index.md
-    - Bases de Datos:
-      - bases-datos/index.md
-    - Redes:
-      - redes/index.md
-    - Seguridad:
-      - seguridad/index.md
-    - Plantillas:
-      - templates/plantilla-proyecto.md
-  - Certificaciones: certificaciones/index.md
+    - Python: python/index.md
+    - Desarrollo Web: web/index.md
+    - Bases de Datos: bases-datos/index.md
+    - Redes: redes/index.md
+    - Seguridad: seguridad/index.md
+    - Cursos: cursos/index.md
+    - Certificaciones: certificaciones/index.md
+    - Plantilla Proyecto: templates/plantilla-proyecto.md
   - Sobre Mí: sobre-mi.md
 
 # Extra
